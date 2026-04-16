@@ -8,19 +8,21 @@
 body{
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
     margin: 0px;
     background: radial-gradient(circle 800px at top left, #409af4bf, transparent 40%)
     , radial-gradient(circle 700px at bottom right , #40d3f4a4, transparent 40%)
     ,#C6DFFF;
     min-height: 100vh;
+    height: auto;
     background-attachment: fixed;
 }
 main{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
 }
 header{
@@ -235,17 +237,22 @@ div a:hover{
     }
 }
 /************************************************ My courses Page ****************************/
-table{
+.courses-details{
     width: 90%;
     height: 500px;
 }
-#tcaption{
+.time-table{
+    width: 90%;
+    height: 500px;
+    margin: 50px;
+}
+table .tcaption{
     font-size: 2rem; 
     font-weight: 700;
     margin: 35px auto;
 }
 table, tr, td{
-    /* font-family: 'Tahoma'; */
+    font-family: 'Tahoma';
     text-align: center;
     border:#021b55 solid 3px;
     border-collapse: collapse;
@@ -262,9 +269,18 @@ th{
 tr:nth-child(odd){
     background-color: #e8e8e88e;
 }
+
 tr:hover{
     background-color: #021b5548;
     color: white;
+}
+@media (max-width: 980px){
+    table{
+        height: 800px;
+    }
+    .tcaption{
+        margin: 50px;
+    }
 }
 
 /******************************************* Add courses Page **********************************/
