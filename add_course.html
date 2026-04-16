@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Learn | Add course</title>
+        <meta charset = "UTF-8"/>
+        <link rel = "stylesheet" href = "style.css"/>
+    </head>
+    <body>
+        <header>
+            <a class = "logo" href = "#"> Learn Edu </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html"> 🏠Home </a></li>
+                    <li><a href="my_courses.html"> 📚My Courses </a></li>
+                    <li><a href="add_course.html"> ➕Add Course </a></li>
+                    <li><a href="contact.html"> 📞Contact Us </a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2> Add Course </h2>
+            <form>
+                <div class = "field">
+                    <label for = "name"> Course Name </label>
+                <input
+                    id = "name"
+                    type =  "text"
+                    placeholder = "ex. Math2"
+                />
+                </div>
+                <div class = "field">
+                    <label for = "ins"> Instructor </label>
+                <input
+                    id = "ins"
+                    type = "text"
+                    placeholder = "Dr.name"
+                /> 
+                </div>
+                <div class = "field">
+                    <label for = "crdt"> Credit Hours </label>
+                <input 
+                    id = "crdt"
+                    type = "text"
+                    value = "3"
+                />
+                </div>
+                <div class = "field">
+                    <label for = "notes" > Notes </label>
+                    <input
+                        id = "notes"
+                        type = "textarea"
+
+                    />
+                </div>
+                <div id = "buttons">
+                    <!-- <div> -->
+                        <input
+                            id = "add"
+                            class = "button"
+                            type = "submit" 
+                            value = "Add"
+                        />
+                    <!-- </div>
+                    <div> -->
+                        <input
+                        id = "reset"
+                        class = "button"
+                        type = "reset"
+                        value = "Reset"
+                        />
+                    <!-- </div> -->
+                </div>
+            </form>
+        </main>
+        <footer>
+            <a class = "logo" href = "index.html"> Learn Edu </a>
+            <p>&copy; 2026 Learn EDU | All rights reserved</p>
+        </footer>
+    </body>
+</html>
