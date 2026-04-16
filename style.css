@@ -209,15 +209,18 @@ footer .logo{
     scale: 1.1;
 }
 nav ul li:hover{
-    text-decoration: underline;
+    text-decoration: none;
     transform: translateY(-5px);
     scale: 1.1;
+}
+nav ul li a:hover{
+    color: white;
 }
 div a:hover{
     transform: translateY(-5px);
     scale: 1.1;
 }
-@media (max-width:1000px){
+@media (max-width:980px){
     #banners{
         display: flex;
         flex-direction: column !important;
