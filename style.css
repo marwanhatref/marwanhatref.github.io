@@ -88,17 +88,12 @@ footer{
     align-items: center;
 }
 footer .logo{
-    /* background-color: #021b55; */
     font-size: 20px;
     width: 30%;
     margin: 5px 30px;
 }
-/* footer p{
-    background-color: red;
-} */
 @media (max-width: 880px){
     header{
-        /* background-color: red; */
         width: 95%;
         margin: 10px 1px;
         padding: 10px 0px;
@@ -165,10 +160,10 @@ footer .logo{
     justify-content: space-evenly;
     background: linear-gradient(180deg, #eef5fa 80%, #d4dde4 100%);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    width: 40%;
-    max-width: 400px;
-    min-height: 400px;
+    width: 500px;
+    height: 60%;
     border-radius: 50px;
+    padding: 10px;
     transition-duration: 0.5s;
 }
 .banner h3{
@@ -191,7 +186,8 @@ footer .logo{
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 .banner img{
-    height: 60%;
+    margin: 10px;
+    height: 300px;
     width: 90%;
     border-radius: 20px;
 }
@@ -218,24 +214,18 @@ div a:hover{
     transform: translateY(-5px);
     scale: 1.1;
 }
-/* @media (min-width: 800) and (max-width: 1200px){
-    header{
-        background-color: red;
-    }
-    header ul{
-        font-size: 12px;
-    }
-} */
 @media (max-width: 880px){
     #banners{
-        flex-flow: column;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
     }
     .banner{
         margin: 20px;
         width: 80%;
     }
 }
-/************************************************ My courses Page ****************************/
+/************************************************ My courses Page *******************************/
 table{
     width: 90%;
     height: 500px;
