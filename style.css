@@ -10,7 +10,7 @@ body{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    margin: 0px;
+    margin: auto;
     background: radial-gradient(circle 800px at top left, #409af4bf, transparent 40%)
     , radial-gradient(circle 700px at bottom right , #40d3f4a4, transparent 40%)
     ,#C6DFFF;
@@ -29,7 +29,7 @@ main{
 header{
     width: 85%;
     height: 25px;
-    margin: 20px;
+    margin: 10px;
     background-color: #6e97f8b2;
     border-radius: 50px;
     display: flex;
@@ -48,7 +48,7 @@ header{
     font-weight: 700;
     font-style: normal;
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 35px;
     margin: 5px;
 }
 nav{
@@ -65,10 +65,10 @@ nav ul{
     font-size: 20px;
 }
 nav ul li{
+    width: 24%;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    white-space: nowrap;
+    flex-wrap: wrap;
 }
 a{
     color: #1a3a8a;
@@ -95,18 +95,34 @@ footer .logo{
 @media (max-width: 990px){
     header{
         width: 95%;
+	height: fit-content;
         margin: 10px 1px;
         padding: 10px 0px;
+	flex-direction: column;
         justify-content: center;
         border-radius: 20px;
     }
     header .logo{
+	margin: auto auto;
         width: auto;
     }
-    header ul li{
-        margin: 0px;
+    nav{
+	width: 100%;
     }
-    header ul li a{
+    nav ul{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+    }
+    nav ul li{
+        margin: 0px auto;
+	width: 49%; 
+	font-size: 35px;
+    }
+    nav ul li a{
+	margin: 10px auto;
         padding: 2px 5px;
     }
     footer{
@@ -156,13 +172,15 @@ footer .logo{
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    background: linear-gradient(180deg, #eef5fa 80%, #d4dde4 100%);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    background: #eef5fa;
     width: 500px;
     min-height: 400px;
     padding: 10px;
     border-radius: 50px;
     transition-duration: 0.5s;
+    box-shadow: 0px 10px 30px 10px #00000025
+                ,-7px -7px 25px #4377c564 inset
+                ,10px 10px 30px #ffffff inset;;
 }
 .banner h3{
     color: #1a3a8a;
@@ -181,7 +199,7 @@ footer .logo{
     height: 10%;
     background-color: #1a3a8a;
     border-radius: 25px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 30px 10px #00000025;
 }
 .banner img{
     height: 60%;
@@ -279,22 +297,24 @@ tr:hover{
 
 /******************************************* Add courses Page **********************************/
 h2{
-    margin: 5px auto;
+    margin: 50px auto;
     color: #1a3a8a;
     font-family: "Poppins", sans-serif;
     font-weight: 900;
     font-style: normal;
     text-transform: uppercase;
-    font-size: 30px; 
+    font-size: 35px; 
 }
 form{
     background: linear-gradient(180deg, #eef5fa 80%, #d4dde4 100%);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 30px 10px #00000025
+                ,-5px -5px 23px #4377c564 inset
+                ,10px 10px 30px #ffffff inset;;
     padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     border-radius: 30px;
     width: 70%;
 }
@@ -368,12 +388,17 @@ form ~ .banner div:hover{
     background-color: #ff7088;
 }
 @media (max-width: 980px){
+    h2{
+	font-size: 40px;
+    }
     form ~ .banner{
         width: 500px;
         height: 400px !important;
     }
     form{
         height: 600px;
+	padding: 20px;
+	margin: 50px;
     }
 }
 /*********************************************** Contact Us ************************************/
@@ -381,8 +406,11 @@ form ~ .banner div:hover{
     width: 70%;
     max-width: 600px;
     height: 300px;
-    background: linear-gradient(180deg, #eef5fa 80%, #d4dde4 100%);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    background: #eef5fa;
+    box-shadow: 0px 10px 30px 10px #00000025
+                ,-7px -7px 25px #4377c564 inset
+                ,10px 10px 30px #ffffff inset;;
     border-radius: 50px;
     transition-duration: 0.5s;
     display: flex;
@@ -431,3 +459,15 @@ form ~ .banner div:hover{
     font-weight: 500;
     font-size: 1rem;
 } 
+@media (max-width: 980px){
+    main{
+	justify-content: center;
+    }
+    .contact-container{
+	height: 600px;
+	margin: 150px;
+    }
+    .contact-container a{
+	margin-bottom: 30px;
+    }
+}
