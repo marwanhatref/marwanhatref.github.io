@@ -119,7 +119,7 @@
     </header>
 
     <!-- ============ HERO ============ -->
-    <section id="top" class="relative pt-24 px-6 overflow-hidden">
+    <section id="top" class="relative pt-24 px-6">
       <div
         class="max-w-7xl mx-auto grid md:grid-cols-[1.15fr_0.85fr] gap-14 items-center"
       >
@@ -206,7 +206,7 @@
         >
           About
         </h2>
-        <p class="text-xl leading-relaxed">
+        <p class="text-l sm:text-xl leading-relaxed">
           I am a Computer Science & AI student and Data Analyst specialized in
           transforming raw data into actionable business insights. My background
           combines algorithmic problem-solving with hands-on experience in sales
@@ -298,10 +298,9 @@
               Power BI Dashboards
             </h3>
             <p class="mt-2 text-sm text-muted leading-relaxed">
-              Turn scattered spreadsheets into interactive, real-time
-              executive dashboards. Track core KPIs, monitor performance
-              trends, and enable rapid strategic decision-making across your
-              business.
+              Turn scattered spreadsheets into interactive, real-time executive
+              dashboards. Track core KPIs, monitor performance trends, and
+              enable rapid strategic decision-making across your business.
             </p>
           </div>
           <ul class="mt-4 space-y-1.5 text-sm text-muted">
@@ -322,16 +321,16 @@
               Messy Data Cleaning & ETL
             </h3>
             <p class="mt-2 text-sm text-muted leading-relaxed">
-              Fix broken, duplicated, or disorganized datasets using
-              automated Python and SQL pipelines. Standardize customer and
-              operational records into structured, reliable tables.
+              Fix broken, duplicated, or disorganized datasets using automated
+              Python and SQL pipelines. Standardize customer and operational
+              records into structured, reliable tables.
             </p>
           </div>
           <ul class="mt-4 space-y-1.5 text-sm text-muted">
             <li class="flex gap-2">
               <i class="fa-solid fa-check text-cyan-bright text-xs mt-1"></i>
-              Eliminate costly data errors and save up to 15+ hours per week
-              of manual data fixes.
+              Eliminate costly data errors and save up to 15+ hours per week of
+              manual data fixes.
             </li>
           </ul>
         </div>
@@ -343,16 +342,16 @@
               Automated Excel Reporting
             </h3>
             <p class="mt-2 text-sm text-muted leading-relaxed">
-              Custom-built dynamic Excel workbooks, Power Query
-              transformations, and interactive financial models tailored to
-              your team's existing workflow without requiring new software.
+              Custom-built dynamic Excel workbooks, Power Query transformations,
+              and interactive financial models tailored to your team's existing
+              workflow without requiring new software.
             </p>
           </div>
           <ul class="mt-4 space-y-1.5 text-sm text-muted">
             <li class="flex gap-2">
               <i class="fa-solid fa-check text-cyan-bright text-xs mt-1"></i>
-              Cut monthly reporting cycles from days to minutes with
-              one-click refreshable models.
+              Cut monthly reporting cycles from days to minutes with one-click
+              refreshable models.
             </li>
           </ul>
         </div>
@@ -393,45 +392,60 @@
         </p>
       </div>
 
-      <div class="grid md:grid-cols-3 gap-7">
+      <div class="grid md:grid-cols-3 gap-7 items-stretch">
         <!-- Project 1 -->
-        <article class="card rounded-xl overflow-hidden">
-          <div
-            class="aspect-video bg-surface2 border-b border-line overflow-hidden"
-          >
+        <article class="flex flex-col card rounded-xl overflow-hidden">
+          <div class="aspect-video border-b border-line overflow-hidden">
             <img
               src="assets/images/Project1.png"
               alt="Advanced Excel Dashboard"
               class="w-full h-full object-contain opacity-90 hover:opacity-100 hover:scale-105 transition-all duration-500"
             />
           </div>
-          <div class="p-6">
-            <p class="tick text-xs text-cyan-bright/80 mb-2">Excel · Sales</p>
-            <h3 class="font-display text-lg font-semibold text-ink">
-              Sales performance dashboard for a multi-branch retailer
-            </h3>
-            <p class="mt-3 text-sm text-muted leading-relaxed">
-              Developed an interactive executive dashboard to evaluate $2.30M in
-              retail sales across product categories, customer segments, and
-              geographic regions. The dashboard tracks core metrics including
-              overall profitability ($286.40K total profit), regional revenue
-              distribution, and multi-year seasonal sales trends to drive
-              strategic inventory and sales decisions.
-            </p>
-            <ul class="mt-4 space-y-1.5 text-sm text-muted">
-              <li class="flex gap-2">
-                <i class="fa-solid fa-check text-cyan-bright mt-1 text-xs"></i>
-                Cut monthly reporting time from 3 days to 2 hours
-              </li>
-              <li class="flex gap-2">
-                <i class="fa-solid fa-check text-cyan-bright mt-1 text-xs"></i>
-                Flagged an underperforming category worth 12% of revenue
-              </li>
-            </ul>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <p class="tick text-xs text-cyan-bright/80 mb-2">Excel · Sales</p>
+              <h3 class="font-display text-lg font-semibold text-ink">
+                Sales performance dashboard for a multi-branch retailer
+              </h3>
+              <p class="mt-3 text-sm text-muted leading-relaxed">
+                Developed an interactive executive dashboard to evaluate $2.30M
+                in retail sales across product categories, customer segments,
+                and geographic regions. The dashboard tracks core metrics
+                including overall profitability ($286.40K total profit),
+                regional revenue distribution, and multi-year seasonal sales
+                trends to drive strategic inventory and sales decisions.
+              </p>
+            </div>
+            <div>
+              <ul class="mt-4 space-y-1.5 text-sm text-muted">
+                <li class="flex gap-2">
+                  <i
+                    class="fa-solid fa-check text-cyan-bright mt-1 text-xs"
+                  ></i>
+                  Cut monthly reporting time from 3 days to 2 hours
+                </li>
+                <li class="flex gap-2">
+                  <i
+                    class="fa-solid fa-check text-cyan-bright mt-1 text-xs"
+                  ></i>
+                  Flagged an underperforming category worth 12% of revenue
+                </li>
+              </ul>
+              <a
+                class="inline-flex items-center gap-2 inline-block mt-8 text-lg text-white font-display font-bold hover:text-cyan-bright transition-colors"
+                href="https://drive.google.com/file/d/1dKJJSBeALK_Epk8yjBK5_hM4UTmGa4CW/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Live Dimo
+                <i class="fa-solid fa-up-right-from-square text-sm"></i>
+              </a>
+            </div>
           </div>
         </article>
         <!-- Project 2 -->
-        <article class="card rounded-xl overflow-hidden">
+        <article class="flex flex-col card rounded-xl overflow-hidden">
           <div
             class="aspect-video bg-surface2 border-b border-line overflow-hidden"
           >
@@ -441,36 +455,52 @@
               class="w-full h-full object-contain opacity-90 hover:opacity-100 hover:scale-105 transition-all duration-500"
             />
           </div>
-          <div class="p-6">
-            <p class="tick text-xs text-cyan-bright/80 mb-2">Power BI · HR</p>
-            <h3 class="font-display text-lg font-semibold text-ink">
-              HR Analytics & Employee Attrition Intelligence Dashboard
-            </h3>
-            <p class="mt-3 text-sm text-muted leading-relaxed">
-              Developed an interactive HR analytics dashboard to track core
-              workforce metrics and uncover primary drivers behind employee
-              turnover across 1,464 employees. The dashboard isolates key
-              attrition indicators across departmental structures, salary slabs,
-              job roles, and employee experience levels to enable data-driven
-              talent retention strategies. Key Metrics & Insights.
-            </p>
-            <ul class="mt-4 space-y-1.5 text-sm text-muted">
-              <li class="flex gap-2">
-                <i class="fa-solid fa-check text-cyan-bright mt-1 text-xs"></i>
-                Identified primary attrition drivers, pinpointing a 16.05%
-                turnover rate concentrated heavily in Administration (37%) and
-                early-career roles.
-              </li>
-              <li class="flex gap-2">
-                <i class="fa-solid fa-check text-cyan-bright mt-1 text-xs"></i>
-                Uncovered flight risks in salary brackets under 10 LPA and among
-                employees with under 5 years of tenure.
-              </li>
-            </ul>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <p class="tick text-xs text-cyan-bright/80 mb-2">Power BI · HR</p>
+              <h3 class="font-display text-lg font-semibold text-ink">
+                HR Analytics & Employee Attrition Intelligence Dashboard
+              </h3>
+              <p class="mt-3 text-sm text-muted leading-relaxed">
+                Developed an interactive HR analytics dashboard to track core
+                workforce metrics and uncover primary drivers behind employee
+                turnover across 1,464 employees. The dashboard isolates key
+                attrition indicators across departmental structures, salary
+                slabs, job roles, and employee experience levels to enable
+                data-driven talent retention strategies. Key Metrics & Insights.
+              </p>
+            </div>
+            <div>
+              <ul class="mt-4 space-y-1.5 text-sm text-muted">
+                <li class="flex gap-2">
+                  <i
+                    class="fa-solid fa-check text-cyan-bright mt-1 text-xs"
+                  ></i>
+                  Uncovered a 16.05% attrition rate led by Administration (37%)
+                  and early-career roles.
+                </li>
+                <li class="flex gap-2">
+                  <i
+                    class="fa-solid fa-check text-cyan-bright mt-1 text-xs"
+                  ></i>
+                  Pinpointed key flight risks among employees earning under 10
+                  LPA and those with less than 5 years of tenure.
+                </li>
+              </ul>
+              <a
+                class="inline-flex items-center gap-2 inline-block mt-8 text-lg text-white font-display font-bold hover:text-cyan-bright transition-colors"
+                href="https://drive.google.com/file/d/1z-0xPidnAdthC_Kes-ZetlnmbH0PH-kQ/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Live Dimo
+                <i class="fa-solid fa-up-right-from-square text-sm"></i>
+              </a>
+            </div>
           </div>
           <!-- Project 3 -->
         </article>
-        <article class="card rounded-xl overflow-hidden">
+        <article class="flex flex-col card rounded-xl overflow-hidden">
           <div
             class="aspect-video bg-surface2 border-b border-line overflow-hidden"
           >
@@ -480,35 +510,51 @@
               class="w-full h-full object-contain opacity-90 hover:opacity-100 hover:scale-105 transition-all duration-500"
             />
           </div>
-          <div class="p-6">
-            <p class="tick text-xs text-cyan-bright/80 mb-2">
-              Power BI · Marketing
-            </p>
-            <h3 class="font-display text-lg font-semibold text-ink">
-              Customer Segmentaion & Marketing Campaign Intelligence Dashboard
-            </h3>
-            <p class="mt-3 text-sm text-muted leading-relaxed">
-              Developed an interactive customer analytics dashboard to evaluate
-              spending behavior, purchasing channels, and demographic trends
-              across 2.24K customers generating $1.35M in total revenue. The
-              dashboard tracks key customer demographics, product category
-              performance, and purchase distribution across store, web, and
-              catalog channels to optimize marketing strategy and customer
-              targeting.
-            </p>
-            <ul class="mt-4 space-y-1.5 text-sm text-muted">
-              <li class="flex gap-2">
-                <i class="fa-solid fa-check text-cyan-bright mt-1 text-xs"></i>
-                Analyzed channel performance, revealing store purchases as the
-                primary channel (38.97%), followed by web orders (27.22%) and
-                catalog sales.
-              </li>
-              <li class="flex gap-2">
-                <i class="fa-solid fa-check text-cyan-bright mt-1 text-xs"></i>
-                Identified core revenue drivers, highlighting Wines and Meat
-                Products as the top-performing product categories.
-              </li>
-            </ul>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <p class="tick text-xs text-cyan-bright/80 mb-2">
+                Power BI · Marketing
+              </p>
+              <h3 class="font-display text-lg font-semibold text-ink">
+                Customer Segmentaion & Marketing Campaign Intelligence Dashboard
+              </h3>
+              <p class="mt-3 text-sm text-muted leading-relaxed">
+                Developed an interactive customer analytics dashboard to
+                evaluate spending behavior, purchasing channels, and demographic
+                trends across 2.24K customers generating $1.35M in total
+                revenue. The dashboard tracks key customer demographics, product
+                category performance, and purchase distribution across store,
+                web, and catalog channels to optimize marketing strategy and
+                customer targeting.
+              </p>
+            </div>
+            <div>
+              <ul class="mt-4 space-y-1.5 text-sm text-muted">
+                <li class="flex gap-2">
+                  <i
+                    class="fa-solid fa-check text-cyan-bright mt-1 text-xs"
+                  ></i>
+                  Mapped channel breakdown, showing physical stores (38.97%) and
+                  web orders (27.22%) leading sales
+                </li>
+                <li class="flex gap-2">
+                  <i
+                    class="fa-solid fa-check text-cyan-bright mt-1 text-xs"
+                  ></i>
+                  Identified Wines and Meat Products as the core revenue
+                  generators across all product categories.
+                </li>
+              </ul>
+              <a
+                class="inline-flex items-center gap-2 inline-block mt-8 text-lg text-white font-display font-bold hover:text-cyan-bright transition-colors"
+                href="https://drive.google.com/file/d/19J0VFCZ2gkqpY4zh7SB07uYUQglWEwht/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Live Dimo
+                <i class="fa-solid fa-up-right-from-square text-sm"></i>
+              </a>
+            </div>
           </div>
         </article>
       </div>
