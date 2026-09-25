@@ -4,6 +4,7 @@ html {
 body {
   background-color: #0b0f17;
   background-size: 56px 56px;
+  overflow-x: hidden;
 }
 .theme-toggle {
   display: inline-flex;
@@ -30,7 +31,7 @@ body {
 .photo-ring::before {
   content: "";
   position: absolute;
-  inset: -14px;
+  inset: 2px;
   border-radius: 50%;
   background: conic-gradient(from 140deg, #06b6d4, #6366f1, #38bdf8, #06b6d4);
   filter: blur(22px);
@@ -111,6 +112,13 @@ body {
   width: 100%;
 }
 
+.nav-link.active {
+  color: #e6edf5; /* text-ink */
+}
+.nav-link.active::after {
+  width: 100% !important;
+}
+
 ::selection {
   background: #06b6d4;
   color: #0b0f17;
@@ -162,6 +170,9 @@ html[data-theme="light"] {
   }
   .nav-link::after {
     background: #0e7490;
+  }
+  .nav-link.active {
+    color: #101725 !important;
   }
   ::selection {
     background: #0891b2;

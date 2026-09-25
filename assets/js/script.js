@@ -50,4 +50,35 @@ document.addEventListener("DOMContentLoaded", () => {
       menuBtn.setAttribute("aria-expanded", "false");
     });
   });
+
+  // ScrollSpy: highlight the nav link for whichever section is currently
+  // in view. Applies to both the desktop and mobile nav (any .nav-link
+  // whose href matches the section's id).
+  const sections = document.querySelectorAll(
+    "#top, #about, #services, #Skills, #projects, #approach, #contact"
+  );
+  const navLinks = document.querySelectorAll(".nav-link");
+
+  const setActiveLink = (id) => {
+    navLinks.forEach((link) => {
+      link.classList.toggle("active", link.getAttribute("href") === `#${id}`);
+    });
+  };
+
+  if ("IntersectionObserver" in window && sections.length) {
+    const spyObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveLink(entry.target.id);
+          }
+        });
+      },
+      // Treat a section as "current" once it crosses a band near the top
+      // of the viewport, rather than as soon as any pixel is visible —
+      // avoids two sections fighting for "active" near their shared edge.
+      { rootMargin: "-40% 0px -55% 0px", threshold: 0 }
+    );
+    sections.forEach((section) => spyObserver.observe(section));
+  }
 });
