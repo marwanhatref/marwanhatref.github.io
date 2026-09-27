@@ -1,3 +1,9 @@
+:root {
+  --base: #0b0f17;
+  --cyan: #06b6d4;
+  --cyan-bright: #38bdf8;
+  --indigo: #6366f1;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -62,6 +68,102 @@ body {
   }
   100% {
     filter: hue-rotate(-10deg);
+  }
+}
+
+.card-glow {
+  position: absolute;
+  inset: 30px;
+  border-radius: 3rem;
+  background: linear-gradient(180deg, #101725 0%, #0d1320 100%);
+  filter: blur(34px);
+  opacity: 0.85;
+  z-index: 0;
+}
+
+.bars {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 12px;
+  z-index: 1;
+}
+.bars div {
+  width: 22px;
+  border-radius: 5px 5px 0 0;
+  background: linear-gradient(180deg, var(--cyan-bright), var(--indigo));
+  opacity: 0.55;
+}
+.bars div.dim {
+  opacity: 0.28;
+}
+
+.hex-wrap {
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 80%;
+  z-index: 2;
+  clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+}
+.hex-photo {
+  width: 90%;
+  height: 90%;
+}
+.hex-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.badge {
+  position: absolute;
+  left: 50%;
+  bottom: 6px;
+  transform: translateX(-50%);
+  background: var(--base);
+  border: 1px solid var(--cyan-bright);
+  color: var(--cyan-bright);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.72rem;
+  padding: 6px 16px;
+  border-radius: 999px;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  z-index: 3;
+  box-shadow:
+    0 8px 20px -6px rgba(56, 189, 248, 0.35),
+    0 2px 6px rgba(0, 0, 0, 0.4);
+  animation: float 3.4s ease-in-out infinite;
+}
+.badge .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--cyan-bright);
+}
+@keyframes float {
+  0%,
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-6px);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .badge {
+    animation: none;
   }
 }
 .photo-ring img {
