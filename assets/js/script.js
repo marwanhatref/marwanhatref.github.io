@@ -51,9 +51,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // ScrollSpy: highlight the nav link for whichever section is currently
-  // in view. Applies to both the desktop and mobile nav (any .nav-link
-  // whose href matches the section's id).
   const sections = document.querySelectorAll(
     "#top, #about, #services, #Skills, #projects, #approach, #contact"
   );
@@ -74,9 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
           }
         });
       },
-      // Treat a section as "current" once it crosses a band near the top
-      // of the viewport, rather than as soon as any pixel is visible —
-      // avoids two sections fighting for "active" near their shared edge.
+
       { rootMargin: "-40% 0px -55% 0px", threshold: 0 }
     );
     sections.forEach((section) => spyObserver.observe(section));
