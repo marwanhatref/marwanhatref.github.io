@@ -31,43 +31,16 @@ body {
 .theme-toggle .sun-icon {
   display: none;
 }
-.photo-ring {
-  position: relative;
-}
-.photo-ring::before {
-  content: "";
-  position: absolute;
-  inset: 2px;
-  border-radius: 50%;
-  background: conic-gradient(from 140deg, #06b6d4, #6366f1, #38bdf8, #06b6d4);
-  filter: blur(22px);
-  opacity: 0.55;
-  z-index: 0;
-  animation: ring-turn 10s linear infinite;
-}
-@keyframes ring-turn {
-  0% {
-    filter: blur(22px) hue-rotate(-20deg);
-    transform: rotate(0deg);
-  }
-  50% {
-    filter: blur(22px) hue-rotate(70deg);
-    transform: rotate(180deg);
-  }
-  100% {
-    filter: blur(22px) hue-rotate(-20deg);
-    transform: rotate(360deg);
-  }
-}
+
 @keyframes word-hue {
   0% {
-    filter: hue-rotate(-10deg);
+    filter: hue-rotate(-5deg);
   }
   50% {
-    filter: hue-rotate(40deg);
+    filter: hue-rotate(20deg);
   }
   100% {
-    filter: hue-rotate(-10deg);
+    filter: hue-rotate(-5deg);
   }
 }
 
@@ -166,17 +139,16 @@ body {
     animation: none;
   }
 }
-.photo-ring img {
-  position: relative;
-  z-index: 1;
-}
 
 .grad-text {
-  background: linear-gradient(100deg, #38bdf8 0%, #06b6d4 45%, #6366f1 100%);
+  /* background: linear-gradient(100deg, #38bdf8 0%, #06b6d4 45%, #6366f1 100%); */
+  /* background: #06b6d4; */
+  /* background: #23b1fd; */
+  background: #38bdf8;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  animation: word-hue 6s ease-in-out infinite;
+  /* animation: word-hue 6s ease-in-out infinite; */
 }
 
 .card {
@@ -249,19 +221,26 @@ html[data-theme="light"] {
   body {
     background-color: #f3f3f3;
   }
-  .photo-ring::before {
-    background: conic-gradient(
-      from 140deg,
-      #0890b293,
-      #4e46e570,
-      #0e74905d,
-      #0890b272
-    );
-  }
   .grad-text {
-    background: linear-gradient(100deg, #0e7490 0%, #0891b2 45%, #4f46e5 100%);
+    /* background: linear-gradient(100deg, #0e7490 0%, #0891b2 45%, #4f46e5 100%); */
+    /* background: #3872f8; */
+    background: #0891b2;
     -webkit-background-clip: text;
     background-clip: text;
+  }
+  .card-glow {
+    /* background: linear-gradient(180deg, #536c9e 0%, #405b94 100%); */
+    background: white;
+    background: rgb(180, 205, 226);
+  }
+  .bars div {
+    width: 22px;
+    border-radius: 5px 5px 0 0;
+    background: linear-gradient(180deg, var(--cyan-bright), var(--indigo));
+    opacity: 0.9;
+  }
+  .bars div.dim {
+    opacity: 0.55;
   }
   .card {
     background: linear-gradient(180deg, #ffffff 0%, #f1f5f9 100%);
