@@ -32,7 +32,18 @@ body {
   display: none;
 }
 
-@keyframes word-hue {
+.grad-text {
+  /* background: linear-gradient(100deg, #38bdf8 0%, #06b6d4 45%, #6366f1 100%); */
+  /* background: #06b6d4; */
+  /* background: #23b1fd; */
+  background: #38bdf8;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  /* animation: word-hue 6s ease-in-out infinite; */
+}
+
+/* @keyframes word-hue {
   0% {
     filter: hue-rotate(-5deg);
   }
@@ -42,7 +53,7 @@ body {
   100% {
     filter: hue-rotate(-5deg);
   }
-}
+} */
 
 .card-glow {
   position: absolute;
@@ -140,17 +151,6 @@ body {
   }
 }
 
-.grad-text {
-  /* background: linear-gradient(100deg, #38bdf8 0%, #06b6d4 45%, #6366f1 100%); */
-  /* background: #06b6d4; */
-  /* background: #23b1fd; */
-  background: #38bdf8;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  /* animation: word-hue 6s ease-in-out infinite; */
-}
-
 .card {
   background: linear-gradient(180deg, #101725 0%, #0d1320 100%);
   border: 1px solid #1f2937;
@@ -242,6 +242,26 @@ html[data-theme="light"] {
   .bars div.dim {
     opacity: 0.55;
   }
+  .badge {
+    /* color: #38bdf8;
+    color: #06b6d4;
+    color: rgb(14, 116, 144);
+    color: #0891b2; */
+    color: rgb(222, 236, 248);
+    /* background-color: rgb(222, 236, 248); */
+    /* background-color: rgba(3, 80, 147, 0.927); */
+    /* background-color: rgba(3, 116, 147, 0.927); */
+    background-color: #0891b2;
+    border-color: var(--cyan-bright);
+  }
+  .badge .dot {
+    /* background: rgb(14, 116, 144); */
+    /* background: #0891b2; */
+    background: rgb(222, 236, 248);
+  }
+  .live-dimo {
+    color: black;
+  }
   .card {
     background: linear-gradient(180deg, #ffffff 0%, #f1f5f9 100%);
     border: 1px solid #dbe3ec;
@@ -263,7 +283,10 @@ html[data-theme="light"] {
   button:focus-visible {
     outline-color: #0e7490;
   }
-
+  .bg-loloblue {
+    /* background-color: #4451dd; */
+    background-color: #0891b2;
+  }
   .bg-base {
     background-color: #f5f8fb !important;
   }
@@ -277,6 +300,9 @@ html[data-theme="light"] {
     background-color: rgba(255, 255, 255, 0.3) !important;
   }
   .bg-surface\/40 {
+    background-color: rgba(255, 255, 255, 0.5) !important;
+  }
+  .bg-surface\/50 {
     background-color: rgba(255, 255, 255, 0.5) !important;
   }
   .bg-line {

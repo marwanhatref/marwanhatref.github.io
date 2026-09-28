@@ -8,6 +8,11 @@ tailwind.config = {
         line: "#1f2937",
         cyan: { DEFAULT: "#06b6d4", bright: "#38bdf8" },
         indigo: { DEFAULT: "#6366f1" },
+        // loloblue: "#2f63d1",
+        // loloblue: "#0891b2",
+        // loloblue: "#4451dd",
+        // loloblue: "#2e69cd",
+        loloblue: "#048fcb",
         ink: "#e6edf5",
         muted: "#8ea0b8",
       },
@@ -52,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   const sections = document.querySelectorAll(
-    "#top, #about, #services, #Skills, #projects, #approach, #contact"
+    "#top, #about, #services, #Skills, #projects, #approach, #contact",
   );
   const navLinks = document.querySelectorAll(".nav-link");
 
@@ -71,8 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
           }
         });
       },
-
-      { rootMargin: "-40% 0px -55% 0px", threshold: 0 }
+      { rootMargin: "-40% 0px -55% 0px", threshold: 0 },
     );
     sections.forEach((section) => spyObserver.observe(section));
   }
